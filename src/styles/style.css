@@ -8,7 +8,7 @@ html {
 html, body {
     height: 100%;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
@@ -23,7 +23,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 3rem;
+    height: 2.8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .announcementBar a {
@@ -36,4 +38,118 @@ a {
 .announcementBar a p {
     color: black;
     margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .logo {
+    margin-left: 3rem;
+}
+
+.header .logo img{
+    width: 5.5rem;
+}
+
+.header .headerContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2.2rem;
+}
+
+.header .headerContainer ul {
+    margin: 0;
+}
+
+.header .headerContainer ul li {
+    padding: 0.6rem;
+}
+
+.header .headerContainer ul li a {
+    color: black;
+}
+
+.header .desktopNavigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.4rem;
+}
+
+.header .desktopNavigation li {
+    list-style: none;
+}
+
+.headerContainer .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 0.5rem;
+}
+
+.headerContainer .links div {
+    margin: 0.1rem;
+}
+
+input[type="search"] {
+    width: 15rem;
+    height: 2.5rem;
+    background-color: rgb(244, 245, 247);
+}
+
+input[type="search"]:active {
+    border: none;
+}
+
+input[type="search"]::placeholder {
+    color: rgb(20, 30, 70);
+}
+
+.headerContainer .links .searchBar {
+    float: right;
+    display: flex;
+    align-items: center;
+    background-color: rgb(244, 245, 247);
+    border-radius: 2rem;
+    padding: 0 0.1rem;
+}
+.headerContainer .links .searchBar input {
+    border: none;
+    border-radius: 2rem;
+}
+
+.headerContainer .links .searchBar button {
+    border: none;
+    cursor: pointer;
+    background-color: rgb(244, 245, 247);
+    border-radius: 2rem;
+}
+
+hr {
+   margin: 0; 
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.card {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid black;
+    margin: 1rem;
 }
